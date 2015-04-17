@@ -6,7 +6,7 @@ QtWin::QtWin(QWidget *parent, Qt::WFlags flags)
 	: QMainWindow(parent, flags)
 {
 	ui.setupUi(this);
-	//ui.simulationView.
+	ui.simulationView->init(SIMULATION_VIEW, this);
 }
 
 QtWin::~QtWin()

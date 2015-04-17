@@ -9,6 +9,14 @@ namespace SmartCNController
 	class QtWin : public QMainWindow
 	{
 		Q_OBJECT
+		typedef enum 
+		{
+			NULL_VIEW,
+			SIMULATION_VIEW,
+			TOOL_VIEW,
+			FILE_VIEW,
+		} ui_view_t;
+		ui_view_t currentUIView;
 
 	public:
 		QtWin(QWidget *parent = 0, Qt::WFlags flags = 0);
